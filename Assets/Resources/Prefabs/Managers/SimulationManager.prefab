@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5763246652978360202
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2066594326828359674}
+  - component: {fileID: 6903681697660386849}
+  - component: {fileID: 5985160652405134515}
+  m_Layer: 0
+  m_Name: SimulationManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2066594326828359674
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5763246652978360202}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6903681697660386849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5763246652978360202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5cfc2c9691466f40bd6057221a3ec04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PIDSimulator.SimulationManager
+  pidController: {fileID: 0}
+  maxSimulationTime: 30
+  stabilityTolerance: 0.05
+  stabilityCheckDuration: 1
+  OnSimulationStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  OnSimulationStopped:
+    m_PersistentCalls:
+      m_Calls: []
+  OnSimulationCompleted:
+    m_PersistentCalls:
+      m_Calls: []
+  OnTimeUpdated:
+    m_PersistentCalls:
+      m_Calls: []
+  OnValueUpdated:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &5985160652405134515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5763246652978360202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c773479f776a1e048a4d4dd723b49b7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PIDSimulator.PIDController
+  Kp: 0
+  Ki: 0
+  Kd: 0
